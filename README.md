@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Watch Solution](https://your-solution-url.com)
+- Live Site URL: [Visit Live](https://m-pingcomingsoon.netlify.app/)
 
 ## My process
 
@@ -49,4 +49,3 @@ Users should be able to:
 
 - Website - [Mohamed](https://mohamed-dev.netlify.app)
 - Frontend Mentor - [@midoashraf010](https://www.frontendmentor.io/profile/midoashraf010)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
