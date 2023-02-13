@@ -1,3 +1,4 @@
+/* GLOBAL */
 :root {
   --blue: hsl(223, 87%, 63%);
   --pale-blue: hsl(223, 100%, 88%);
@@ -23,4 +24,203 @@ body {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* STYLE */
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  padding-bottom: 1rem;
+  justify-content: center;
+}
+.container {
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+.master .content {
+  text-align: center;
+}
+.master .content .logo {
+  width: 50px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+.master .content .logo img {
+  max-width: 100%;
+}
+.master .content h1 {
+  font-weight: 300;
+  color: var(--gray);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.master .content h1 span {
+  font-weight: 700;
+  color: var(--dark-blue);
+}
+.master .content > p {
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.master .content form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.master .content form .input_holder {
+  width: 100%;
+}
+.master .content form .input_holder input {
+  width: 100%;
+  border: 1px solid hsl(225, 31%, 87%);
+  padding: 0.8rem 2rem;
+  border-radius: 100vw;
+  -webkit-border-radius: 100vw;
+  -moz-border-radius: 100vw;
+  -ms-border-radius: 100vw;
+  -o-border-radius: 100vw;
+  font-size: 0.8rem;
+  color: var(--dark-blue);
+}
+.master .content form .input_holder input#submit {
+  border: none;
+  color: white;
+  background-color: var(--blue);
+  transition: 300ms ease;
+  -webkit-transition: 300ms ease;
+  -moz-transition: 300ms ease;
+  -ms-transition: 300ms ease;
+  -o-transition: 300ms ease;
+  cursor: pointer;
+  box-shadow: 0 5px 10px var(--pale-blue);
+}
+.master .content form .input_holder input#submit:hover {
+  background-color: var(--pale-blue);
+}
+input:focus {
+  outline: none;
+}
+input::placeholder {
+  color: hsl(225, 31%, 87%);
+  font-weight: 200;
+}
+
+.master .content form .input_holder p {
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin: 5px 0 0.5rem;
+  font-style: italic;
+  color: var(--light-red);
+  display: none;
+}
+.master .content form.error .input_holder input {
+  border: 1px solid var(--light-red);
+}
+.master .content form.error .input_holder p {
+  display: block;
+}
+.master .img_holder {
+  margin: 2rem 0;
+}
+.master .img_holder img {
+  max-width: 100%;
+}
+.links ul {
+  display: flex;
+  margin: auto;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.links ul li a {
+  outline: 1px solid var(--pale-blue);
+  border-radius: 50%;
+  width: 35px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  font-size: 1rem;
+  color: var(--blue);
+  transition: 200ms ease;
+  -webkit-transition: 200ms ease;
+  -moz-transition: 200ms ease;
+  -ms-transition: 200ms ease;
+  -o-transition: 200ms ease;
+}
+.links ul li a:hover {
+  background-color: var(--blue);
+  color: white;
+  outline: none;
+}
+.links small {
+  color: var(--gray);
+  font-size: 0.5rem;
+  display: block;
+  text-align: center;
+}
+
+@media screen and (min-width: 767px) {
+  .master {
+    padding: 50px 0;
+  }
+  .master .content .logo {
+    width: 100px;
+  }
+  .master .content h1 {
+    font-size: 2.5rem;
+  }
+  .master .content > p {
+    font-size: 1rem;
+  }
+  .master .content form {
+    flex-direction: row;
+  }
+  .master .content form .input_holder:last-child {
+    width: 40%;
+  }
+  .master .content form .input_holder input {
+    padding: 1rem 2rem;
+  }
+  .container {
+    max-width: 600px;
+  }
+  .links ul li a {
+    width: 50px;
+    font-size: 1.2rem;
+  }
+  .links small {
+    font-size: 0.7rem;
+  }
 }
