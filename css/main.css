@@ -213,6 +213,11 @@ input::placeholder {
   .master .content form .input_holder input {
     padding: 1rem 2rem;
   }
+  .master .content form .input_holder p {
+    text-align: left;
+    padding-left: 2rem;
+    margin-bottom: 0;
+  }
   .container {
     max-width: 600px;
   }
