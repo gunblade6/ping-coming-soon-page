@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Watch Solution](https://your-solution-url.com)
+- Solution URL: [Go To Solution](https://www.frontendmentor.io/solutions/ping-coming-soon-page-kHYKNOpDsP)
 - Live Site URL: [Visit Live](https://m-pingcomingsoon.netlify.app/)
 
 ## My process
